@@ -1,6 +1,3 @@
-import java.util.*;
-import java.util.concurrent.Semaphore;
-
 
 public class Assignment3 {
     public static void main(String [] args) throws InterruptedException {
@@ -53,7 +50,7 @@ class Studentt implements Runnable {
     @Override
     public void run() {
         long start = System.currentTimeMillis();
-        long end = start + 60*1000;
+        long end = start + 120*1000;
         try {
             while (System.currentTimeMillis() < end) {
                 // thinking
